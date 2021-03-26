@@ -110,6 +110,10 @@ def to_hdf5(filename, input_dict, group='/', tablename='toydata'):
     print('table stored in ',filename)
 
 
+##################
+# Pseudo data generator
+##################
+
 def generate_pseudo_data(livetime, spe_peak, start_date, rate=DEFAULT_RATE, debug=False):
     '''
     Create a multidimensional array of data 
@@ -154,6 +158,10 @@ def generate_pseudo_data(livetime, spe_peak, start_date, rate=DEFAULT_RATE, debu
     # return a dict
     return data_dict
 
+######################################
+# Individual steps of data generation
+######################################
+
 #@jit
 def draw_trigger_times(livetime, rate, mjd_offset=DEFAULT_START):
     '''
@@ -183,15 +191,27 @@ def draw_trigger_times(livetime, rate, mjd_offset=DEFAULT_START):
     return list(np.sort(time_series))
 
 #@jit
-def draw_energy_distribution(n_events, mu=30., sigma= 10.):
+def draw_energy_distribution(n_events, df=3., nonc= 20.):
     '''
-    energy distribution is just a gaussian
+    energy distribution is a non central chi2 
+
+    inputs:
+    -------
+    n_events: int (numbers of events to draw)
+
+    df: float (degree of freedom of the chi2)
+
+    nonc: float (non-positivity coefficient)
     '''
+
+    assert df>0, 'ERROR: df must be strictly positive'
+    assert nonc>0, 'ERROR: nonc must be strictly positive'
+
     energy_array = []
-    
     for i in range(n_events):
-        E = np.random.normal(loc=mu, scale=sigma)
+        E = np.random.noncentral_chisquare(df,nonc)
         energy_array.append(E)
+
     return energy_array
 
 #@jit

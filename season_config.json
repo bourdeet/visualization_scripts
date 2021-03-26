@@ -1,0 +1,62 @@
+{
+	"2010":{
+		"start_time_mjd":55197,
+		"livetime_yr":1.0,
+		"event_file":"pseudo_data_2010.hdf5"
+	},
+
+	"2011":{
+		"start_time_mjd":55562,
+		"livetime_yr":1.0,
+		"event_file":"pseudo_data_2011.hdf5"
+	},
+
+	"2012":{
+		"start_time_mjd":55927,
+		"livetime_yr":1.0,
+		"event_file":"pseudo_data_2012.hdf5"
+	},
+
+	"2013":{
+		"start_time_mjd":56293,
+		"livetime_yr":1.0,
+		"event_file":"pseudo_data_2013.hdf5"
+	},
+
+	"2014":{
+		"start_time_mjd":56658,
+		"livetime_yr":1.0,
+		"event_file":"pseudo_data_2014.hdf5"
+	},
+
+	"2015":{
+		"start_time_mjd":57023,
+		"livetime_yr":1.0,
+		"event_file":"pseudo_data_2015.hdf5"
+	},
+
+	"2016":{
+		"start_time_mjd":57388,
+		"livetime_yr":1.0,
+		"event_file":"pseudo_data_2016.hdf5"
+	},
+
+	"2017":{
+		"start_time_mjd":57754,
+		"livetime_yr":1.0,
+		"event_file":"pseudo_data_2017.hdf5"
+	},
+
+	"2018":{
+		"start_time_mjd":58119,
+		"livetime_yr":1.0,
+		"event_file":"pseudo_data_2018.hdf5"
+	},
+
+	"2019":{
+		"start_time_mjd":58484,
+		"livetime_yr":1.0,
+		"event_file":"pseudo_data_2019.hdf5"
+	}
+
+}
