@@ -55,3 +55,5 @@ python toy_mc_generator.py -sd 55562 -o pseudo_data_2011.hdf5 -l 0.95
 python toy_mc_generator.py -sd 57023 -o pseudo_data_2015.hdf5 -spe 1.02
 ```
 
+From that PDF it can be seen that the chi2 mapping is really good at finding changes in overall rates, whereas the KS test is king at spotting small changes in the shape of a distribution.
+
