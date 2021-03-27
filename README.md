@@ -5,6 +5,8 @@ A collection of scripts created over the years to read and visualize data.
 1D Distribution       |  KS Test Comparison
 :-------------------------:|:-------------------------:
 ![Energy distribution](/example_plots/season_comparison_reco_energy_hist.png) | ![KS Test](/example_plots/season_comparison_reco_energy_ks.png)
+:-------------------------:|:-------------------------:
+chi2 Distribution --->     |  ![chi2 distribution](/example_plots/season_comparison_reco_energy_chi2.png)
 
 ##  A. Data stability plots
 

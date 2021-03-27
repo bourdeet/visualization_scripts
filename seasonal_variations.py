@@ -1375,6 +1375,7 @@ if __name__ == "__main__" :
         plt.savefig('season_comparison_{}_ks.png'.format(v))
 
         fig, ax = comparator.plot_yearly_chi2(hist_key=v)
+        fig.set_size_inches([10.,9.5])
         plt.savefig('season_comparison_{}_chi2.png'.format(v))     
         fig, gs, ax = comparator.plot_histograms(hist_key=v, plot_cdf=False)
         ax.get_xaxis().set_ticks([])
