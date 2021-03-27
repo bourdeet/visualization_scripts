@@ -1371,7 +1371,7 @@ if __name__ == "__main__" :
 
         print('plotting: ',v)
         fig, ax = comparator.plot_yearly_ks_test(hist_key=v)
-        fig.tight_layout()
+        fig.set_size_inches([10.,9.5])
         plt.savefig('season_comparison_{}_ks.png'.format(v))
 
         fig, ax = comparator.plot_yearly_chi2(hist_key=v)
@@ -1380,7 +1380,7 @@ if __name__ == "__main__" :
         ax.get_xaxis().set_ticks([])
         comparator.plot_single_ratio(hist_key=v, fig=fig, grid_elements=gs)
         s = fig.get_size_inches()
-        fig.set_size_inches([10.,6.])
+        fig.set_size_inches([10.,7.])
 
         plt.savefig('season_comparison_{}_hist.png'.format(v))
 
