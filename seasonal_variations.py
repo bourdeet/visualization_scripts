@@ -1357,7 +1357,6 @@ if __name__ == "__main__" :
 
     print('pdf saved: ', args.output_file)
 
-
         
         
     #
@@ -1380,6 +1379,8 @@ if __name__ == "__main__" :
         fig, gs, ax = comparator.plot_histograms(hist_key=v, plot_cdf=False)
         ax.get_xaxis().set_ticks([])
         comparator.plot_single_ratio(hist_key=v, fig=fig, grid_elements=gs)
+        s = fig.get_size_inches()
+        fig.set_size_inches([10.,6.])
 
         plt.savefig('season_comparison_{}_hist.png'.format(v))
 
