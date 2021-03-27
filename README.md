@@ -1,6 +1,11 @@
 # visualization_scripts
 A collection of scripts created over the years to read and visualize data. 
 
+
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![Energy distribution](/example_plots/season_comparison_reco_energy_hist.png) | ![KS Test](/example_plots/season_comparison_reco_energy_ks.png)
+
 ##  A. Data stability plots
 
 These plots were designed to compare different data samples from IceCube taken during different detector seasons, and assess whether these samples are compatible with one another. This is done by looking at the 1D distribution of several control variables in the data.
